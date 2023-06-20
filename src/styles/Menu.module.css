@@ -1,0 +1,28 @@
+.menu {
+    background-color: hsl(100, 100, 100);
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 1324px;
+    padding: 3% 0;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.links {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    font-weight: bold;
+}
+
+.links:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+.marginLink{
+    margin-right: 2rem;
+}

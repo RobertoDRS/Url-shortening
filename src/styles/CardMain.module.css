@@ -1,0 +1,40 @@
+.cardMain {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 2rem;
+    padding: 8rem 3rem 4rem 3rem; 
+    position: relative;
+    width: calc((100%)/3);
+    height: 35rem;
+}
+
+.image {
+    background-color: hsl(257, 27%, 26%);
+    padding: 4%;
+    position: absolute;
+    border-radius: 0.8rem;
+    top: -3rem;
+}
+
+.card2{
+    margin-top: 5rem;
+}
+
+.card3{
+    margin-top: 10rem;
+}
+ 
+.card2::before, .card3::before {
+    content: "";
+    height: 0.5rem;
+    width: 3rem;
+    position: absolute;
+    left: -3rem;
+    background-color: hsl(180, 66%, 49%);
+}
+
+
+

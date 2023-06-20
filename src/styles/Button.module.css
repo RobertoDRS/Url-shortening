@@ -1,0 +1,20 @@
+.button {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    width: 15rem;
+    padding: 1.5rem 0;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+}
+
+
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(180, 82%, 73%);
+}
+
+.quadrado {
+    border-radius: 0.8rem;
+}

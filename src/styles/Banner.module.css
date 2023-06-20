@@ -1,0 +1,29 @@
+.banner {
+    height: 100%;
+    width: 100%;
+    max-width: 1324px;
+    display: flex;
+    position: relative;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1%;
+    width: 55%;
+}
+
+.div1 p {
+    margin-bottom: 3rem;
+}
+
+.div2{
+    background-image: url('../../public/images/illustration-working.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    right: -10rem;
+}
