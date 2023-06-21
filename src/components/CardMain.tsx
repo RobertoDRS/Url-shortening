@@ -8,7 +8,7 @@ interface cardMainProps {
     cardNumero: number
 }
 
-export default (props: cardMainProps) => {
+const CardMain = (props: cardMainProps) => {
     return (
         <div className={`${styles.cardMain} 
             ${props.cardNumero === 2 ? styles.card2: 
@@ -20,3 +20,5 @@ export default (props: cardMainProps) => {
         </div>
     )
 }
+
+export default CardMain

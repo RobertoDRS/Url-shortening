@@ -2,7 +2,7 @@ import Menu from "../Menu"
 import styles from '../../styles/Header.module.css'
 import Banner from "../Banner"
 
-export default () => {
+const Header = () => {
     return (
         <header className={styles.header}>
             <Menu/>
@@ -10,3 +10,5 @@ export default () => {
         </header>
     )
 }
+
+export default Header

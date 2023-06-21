@@ -1,7 +1,7 @@
 import Button from "./Button"
 import styles from '../styles/Banner.module.css'
 
-export default () => {
+const Banner = () => {
     return (
         <div className={styles.banner}>
             <div className={styles.div1}>
@@ -21,3 +21,5 @@ export default () => {
         </div>
     )
 }
+
+export default Banner

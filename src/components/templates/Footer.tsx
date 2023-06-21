@@ -6,7 +6,7 @@ import twitter from '../../../public/images/icon-twitter.svg'
 import pinterest from '../../../public/images/icon-pinterest.svg'
 import instagram from '../../../public/images/icon-instagram.svg'
 
-export default () => {
+const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.divPrincipal}>
@@ -56,3 +56,5 @@ export default () => {
         </footer>
     )
 }
+
+export default Footer

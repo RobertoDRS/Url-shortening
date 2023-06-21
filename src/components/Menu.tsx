@@ -4,7 +4,7 @@ import styles from '../styles/Menu.module.css'
 
 import logo from '../../public/images/logo.svg'
 
-export default () => {
+const Menu = () => {
     return (
             <div className={styles.menu} >
                 <div className={styles.div}>
@@ -21,3 +21,5 @@ export default () => {
             </div>
     )
 }
+
+export default Menu

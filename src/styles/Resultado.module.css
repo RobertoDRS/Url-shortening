@@ -1,0 +1,23 @@
+.divPrincipal {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 0.8rem;
+}
+
+.urlOriginal{
+    color: hsl(260, 8%, 14%);
+}
+
+.divInterna{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.divInterna span {
+    color: hsl(180, 66%, 49%)
+}

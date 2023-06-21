@@ -18,3 +18,16 @@
 .quadrado {
     border-radius: 0.8rem;
 }
+
+.pequeno {
+    width: 12rem;
+    padding: 1.3rem 0;
+}
+
+.copiado {
+    background-color:hsl(260, 8%, 14%)
+}
+
+.copiado:hover {
+    background-color:hsl(260, 8%, 14%)
+}

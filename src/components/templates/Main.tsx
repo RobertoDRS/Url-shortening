@@ -7,7 +7,7 @@ import registros from '../../../public/images/icon-detailed-records.svg'
 import customizavel from '../../../public/images/icon-fully-customizable.svg'
 import Button from "../Button"
 
-export default () => {
+const Main = () => {
     return (
         <main className={styles.main}>
             <Formulario/>
@@ -62,3 +62,5 @@ export default () => {
         </main>
     )
 }
+
+export default Main
