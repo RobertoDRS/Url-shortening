@@ -6,6 +6,7 @@ interface buttonProps {
     quadrado?: boolean
     pequeno?: boolean
     copiado?: boolean
+    largo?: boolean
     quandoClicado?: () => any
     copiar?: () => any
 }
@@ -17,7 +18,8 @@ const Button = (props: buttonProps) => {
     return (
         <button 
             className={`${styles.button} ${props.quadrado ? styles.quadrado: ''}
-                ${props.pequeno ? styles.pequeno: ''} ${props.copiado ? styles.copiado: ''} `}
+                ${props.pequeno ? styles.pequeno: ''} ${props.copiado ? styles.copiado: ''}
+                ${props.largo ? styles.largo: ''} `}
             onClick={onclick}>
                 {props.texto}
         </button>

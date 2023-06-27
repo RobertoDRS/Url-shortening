@@ -27,3 +27,155 @@
     position: absolute;
     right: -9.9rem;
 }
+
+/** Desktop **/
+@media (min-width: 2400px) {
+    .div2{
+        width: 55%;
+        right: -35rem;
+        background-size:contain;
+    }
+}
+
+@media (min-width: 2300px) and (max-width: 2400px){
+    .div2{
+        width: 55%;
+        right: -28rem;
+        background-size:contain;
+    }
+}
+
+@media (min-width: 2300px){
+    .banner {
+        max-width: 2224px;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2300px){
+    .banner {
+        max-width: 1924px;
+    }
+}
+
+@media (min-width: 1850px) and (max-width: 2300px){
+    .div2{
+        width: 50%;
+        right: -28rem;
+        background-size:contain;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 1850px){
+    .div2{
+        width: 50%;
+        right: -25rem;
+        background-size:contain;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 2000px){
+    .banner {
+        max-width: 1724px;
+    }
+}
+
+
+
+@media (min-width: 1710px) and (max-width: 1800px){
+    .div2{
+        width: 52%;
+        right: -26rem;
+        background-size:contain;
+    }
+}
+
+@media (min-width: 1620px) and (max-width: 1710px){
+
+    .div2{
+        width: 52%;
+        right: -22rem;
+        background-size:contain;
+    }
+}
+
+@media (min-width: 1620px) and (max-width: 1800px){
+    .banner {
+        max-width: 1524px;
+    }
+}
+
+@media (min-width: 1520px) and (max-width: 1620px){
+    .div2{
+        width: 50%;
+        right: -16rem;
+    }
+}
+
+@media (max-width: 1380px){
+    .banner {
+        height: 100%;
+        width: 100%;
+        padding: 0% 2%;   
+    }
+
+    .div2{
+        right: -8.5rem;
+    }
+}
+
+@media (max-width: 1300px){
+    .div2{
+        right: -4rem;
+    }
+}
+
+@media (max-width: 1210px){
+    .div2{
+        height: 90%;
+        right: 0rem;
+    }
+
+    .banner {
+        padding: 4rem 2%;
+    }
+  }
+
+  @media (max-width: 1150px){
+    .div1{
+        width: 50%;
+    }
+  }
+  
+  @media (max-width: 1050px){
+    .div2{
+        width: 48%;
+    }
+  }
+
+  @media (max-width: 950px){
+    .div2{
+        background-size:cover;
+        height: 70%;
+        right: 0rem;
+    }
+  }
+  
+  @media (max-width: 850px){
+    .div2{
+        width: 55%;
+        right: -3rem;
+    }
+  }
+
+  @media (max-width: 800px){
+    .div1{
+        width: 47%;
+    }
+  }
+
+  @media (max-width: 705px){
+    .banner {
+        padding: 4rem 4%;
+    }
+  }
+

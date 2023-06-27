@@ -36,5 +36,82 @@
     background-color: hsl(180, 66%, 49%);
 }
 
+/** Desktop **/
+@media (min-width: 2300px){
+    .image {
+        padding: 1%;
+    }
+}
+
+@media (min-width: 1620px) and (max-width: 2300px){
+    .image {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 1210px){
+    .cardMain {
+        height: 42rem;
+    }
+}
+
+@media (max-width: 1050px){
+    .cardMain {
+        height: 38rem;
+    }
+}
+
+@media (max-width: 950px){
+    .cardMain {
+        height: 42rem;
+    }
+}
+
+@media (max-width: 850px){
+    .card2::before, .card3::before {
+        width: 1.5rem;
+        left: -1.5rem;
+    }
+}
+
+@media (max-width: 800px){
+    .cardMain {
+        height: 50rem;
+    }
+}
+
+@media (max-width: 705px){
+    .cardMain {
+        height: 30rem;
+        width: 96%;
+        align-items: center;
+    }
+
+    .cardMain p {
+        text-align: center;
+    }
+
+    .image {
+        padding: 2%;
+        position: absolute;
+        top: -3.5rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .card2::before, .card3::before {
+        height: 10rem;
+        width: 0.5rem;
+        top: -10rem;
+        left: 49.5%;
+
+    }
+
+    .card2, .card3{
+        margin-top: 0;
+    }
+    
+}
+
 
 

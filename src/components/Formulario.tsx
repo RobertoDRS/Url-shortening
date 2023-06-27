@@ -3,7 +3,11 @@ import styles from '../styles/Formulario.module.css'
 import { useState } from "react"
 import Resultado from "./Resultado"
 
-const Formulario = () => {
+interface formularioProps{
+    alternarResultadoApresentado: (v:boolean) => void
+}
+
+const Formulario = (props: formularioProps) => {
 
     const [link, setLink] = useState<string>('')
     const [resp, setResp] = useState<any>(false)
@@ -17,14 +21,20 @@ const Formulario = () => {
             fetch(`https://api.shrtco.de/v2/shorten?url=${link}`)
                 .then(res => res.json())
                 .then(data => {
+                    setResp(false)
+                    props.alternarResultadoApresentado(true)
                     const response = data.result.full_short_link
                     setResp(<Resultado urlOriginal={link} urlEncurtada={response}/>)
                     setUrlIncoreta(false)
                 })
-                .catch(() => setUrlIncoreta(true))
+                .catch(() => {
+                    setUrlIncoreta(true)
+                    props.alternarResultadoApresentado(false)
+                })
         }else {
             setInputVazio(true)
             setResp(false)
+            props.alternarResultadoApresentado(false)
         }
     }
 

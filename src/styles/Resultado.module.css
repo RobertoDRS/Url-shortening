@@ -21,3 +21,19 @@
 .divInterna span {
     color: hsl(180, 66%, 49%)
 }
+
+@media (max-width: 705px) {
+    .divPrincipal {
+        flex-direction: column;
+        padding: 2rem 3rem;
+        gap: 2rem;
+    }
+
+    .divInterna{
+        flex-direction: column;
+        border-top: 1px solid hsl(0, 0%, 75%);
+        width: 100%;
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+}

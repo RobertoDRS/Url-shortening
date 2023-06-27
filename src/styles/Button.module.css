@@ -31,3 +31,27 @@
 .copiado:hover {
     background-color:hsl(260, 8%, 14%)
 }
+
+
+/** Desktop **/
+@media (min-width: 1800px){
+    .button {
+        font-size: 2rem;
+        width: 20rem;
+        padding: 2rem 0;
+    }
+    
+}
+
+@media (max-width: 1050px){
+    .button {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 705px){
+    .largo {
+        width: 100%;
+        padding: 1.3rem 0;
+    }
+}

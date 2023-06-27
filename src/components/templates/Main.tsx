@@ -6,11 +6,18 @@ import reconhecimento from '../../../public/images/icon-brand-recognition.svg'
 import registros from '../../../public/images/icon-detailed-records.svg'
 import customizavel from '../../../public/images/icon-fully-customizable.svg'
 import Button from "../Button"
+import { useState } from "react"
 
 const Main = () => {
+
+    const [resultadoApresentado, setResultadoApresentado] = useState(false)
+
+    function alternarResultadoApresentado(v: boolean){
+        setResultadoApresentado(v)
+    }
     return (
-        <main className={styles.main}>
-            <Formulario/>
+        <main className={`${styles.main} ${resultadoApresentado ? styles.resultadoApresentado: ''}`}>
+            <Formulario alternarResultadoApresentado={alternarResultadoApresentado}/>
 
             <div className={styles.div1}>
                 <h2>
