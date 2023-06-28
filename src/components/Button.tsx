@@ -16,12 +16,10 @@ const Button = (props: buttonProps) => {
     const onclick = props.quandoClicado ? props.quandoClicado : props.copiar ? props.copiar: () => {}
 
     return (
-        <button 
-            className={`${styles.button} ${props.quadrado ? styles.quadrado: ''}
-                ${props.pequeno ? styles.pequeno: ''} ${props.copiado ? styles.copiado: ''}
-                ${props.largo ? styles.largo: ''} `}
-            onClick={onclick}>
-                {props.texto}
+        <button className={` ${styles.button} ${props.quadrado ? styles.quadrado: ''}
+            ${props.pequeno ? styles.pequeno: ''} ${props.copiado ? styles.copiado: ''}
+            ${props.largo ? styles.largo: ''} `} onClick={onclick}>
+            {props.texto}
         </button>
     )
 }

@@ -9,7 +9,6 @@
     font-size: 1.6rem;
 }
 
-
 .button:hover {
     cursor: pointer;
     background-color: hsl(180, 82%, 73%);
@@ -34,24 +33,27 @@
 
 
 /** Desktop **/
-@media (min-width: 1800px){
+
+@media (min-width: 1800px) {
     .button {
         font-size: 2rem;
         width: 20rem;
         padding: 2rem 0;
     }
-    
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
     .button {
         font-size: 1.4rem;
     }
 }
 
-@media (max-width: 705px){
+/** Mobile **/
+
+@media (max-width: 705px) {
     .largo {
         width: 100%;
         padding: 1.3rem 0;
+        font-size: 1.4rem;
     }
 }

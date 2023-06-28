@@ -18,7 +18,7 @@
     margin-bottom: 3rem;
 }
 
-.div2{
+.div2 {
     background-image: url('../../public/images/illustration-working.svg');
     background-repeat: no-repeat;
     background-position-y: center;
@@ -29,51 +29,52 @@
 }
 
 /** Desktop **/
+
 @media (min-width: 2400px) {
-    .div2{
+    .div2 {
         width: 55%;
         right: -35rem;
         background-size:contain;
     }
 }
 
-@media (min-width: 2300px) and (max-width: 2400px){
-    .div2{
+@media (min-width: 2300px) and (max-width: 2400px) {
+    .div2 {
         width: 55%;
         right: -28rem;
         background-size:contain;
     }
 }
 
-@media (min-width: 2300px){
+@media (min-width: 2300px) {
     .banner {
         max-width: 2224px;
     }
 }
 
-@media (min-width: 2000px) and (max-width: 2300px){
+@media (min-width: 2000px) and (max-width: 2300px) {
     .banner {
         max-width: 1924px;
     }
 }
 
-@media (min-width: 1850px) and (max-width: 2300px){
-    .div2{
+@media (min-width: 1850px) and (max-width: 2300px) {
+    .div2 {
         width: 50%;
         right: -28rem;
         background-size:contain;
     }
 }
 
-@media (min-width: 1800px) and (max-width: 1850px){
-    .div2{
+@media (min-width: 1800px) and (max-width: 1850px) {
+    .div2 {
         width: 50%;
         right: -25rem;
         background-size:contain;
     }
 }
 
-@media (min-width: 1800px) and (max-width: 2000px){
+@media (min-width: 1800px) and (max-width: 2000px) {
     .banner {
         max-width: 1724px;
     }
@@ -81,56 +82,55 @@
 
 
 
-@media (min-width: 1710px) and (max-width: 1800px){
-    .div2{
+@media (min-width: 1710px) and (max-width: 1800px) {
+    .div2 {
         width: 52%;
         right: -26rem;
         background-size:contain;
     }
 }
 
-@media (min-width: 1620px) and (max-width: 1710px){
-
-    .div2{
+@media (min-width: 1620px) and (max-width: 1710px) {
+    .div2 {
         width: 52%;
         right: -22rem;
         background-size:contain;
     }
 }
 
-@media (min-width: 1620px) and (max-width: 1800px){
+@media (min-width: 1620px) and (max-width: 1800px) {
     .banner {
         max-width: 1524px;
     }
 }
 
-@media (min-width: 1520px) and (max-width: 1620px){
-    .div2{
+@media (min-width: 1520px) and (max-width: 1620px) {
+    .div2 {
         width: 50%;
         right: -16rem;
     }
 }
 
-@media (max-width: 1380px){
+@media (max-width: 1380px) {
     .banner {
         height: 100%;
         width: 100%;
         padding: 0% 2%;   
     }
 
-    .div2{
+    .div2 {
         right: -8.5rem;
     }
 }
 
-@media (max-width: 1300px){
-    .div2{
+@media (max-width: 1300px) {
+    .div2 {
         right: -4rem;
     }
 }
 
-@media (max-width: 1210px){
-    .div2{
+@media (max-width: 1210px) {
+    .div2 {
         height: 90%;
         right: 0rem;
     }
@@ -140,42 +140,106 @@
     }
   }
 
-  @media (max-width: 1150px){
-    .div1{
+  @media (max-width: 1150px) {
+    .div1 {
         width: 50%;
     }
   }
   
-  @media (max-width: 1050px){
-    .div2{
+  @media (max-width: 1050px) {
+    .div2 {
         width: 48%;
     }
   }
 
-  @media (max-width: 950px){
-    .div2{
+  @media (max-width: 950px) {
+    .div2 {
         background-size:cover;
         height: 70%;
         right: 0rem;
     }
   }
   
-  @media (max-width: 850px){
-    .div2{
+  @media (max-width: 850px) {
+    .div2 {
         width: 55%;
         right: -3rem;
     }
   }
 
-  @media (max-width: 800px){
-    .div1{
+  @media (max-width: 800px) {
+    .div1 {
         width: 47%;
     }
   }
 
-  @media (max-width: 705px){
+  @media (max-width: 705px) {
     .banner {
         padding: 4rem 4%;
     }
+
+    .div2 {
+        width: 55%;
+        right: -3rem;
+        height: 60%;
+    }
+}
+
+/** Mobile**/
+
+@media (max-width: 668px) {
+    .banner {
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding: 5rem 4%;
+        padding-top: 0;
+        height: 100%;
+    }
+
+    .div1 {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .div2 {
+        width: 67%;
+        right: 0rem;
+        height: 52%;
+        top: 0;
+    }
   }
 
+  @media (max-width: 500px) {
+    .div1 p {
+        margin-bottom: 1.5rem;
+    }
+
+    .banner {
+        gap: 2rem;
+        padding: 6rem 4%;
+    }
+
+    .div2 {
+        height: 50%;
+    }
+  }
+
+  @media (max-width: 442px) {
+    .div2 {
+        width: 80%;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .div2 {
+        width: 90%;
+    }
+  }
+
+  @media (max-width: 334px) {
+    .div2 {
+        height: 43%;
+    }
+  }

@@ -1,11 +1,13 @@
+import styles from '../../styles/Main.module.css'
+
 import CardMain from "../CardMain"
 import Formulario from "../Formulario"
-import styles from '../../styles/Main.module.css'
+import Button from "../Button"
 
 import reconhecimento from '../../../public/images/icon-brand-recognition.svg'
 import registros from '../../../public/images/icon-detailed-records.svg'
 import customizavel from '../../../public/images/icon-fully-customizable.svg'
-import Button from "../Button"
+
 import { useState } from "react"
 
 const Main = () => {
@@ -15,8 +17,9 @@ const Main = () => {
     function alternarResultadoApresentado(v: boolean){
         setResultadoApresentado(v)
     }
+
     return (
-        <main className={`${styles.main} ${resultadoApresentado ? styles.resultadoApresentado: ''}`}>
+        <main className={` ${styles.main} ${resultadoApresentado ? styles.resultadoApresentado: ''} `}> 
             <Formulario alternarResultadoApresentado={alternarResultadoApresentado}/>
 
             <div className={styles.div1}>
@@ -34,8 +37,7 @@ const Main = () => {
                     titulo="Reconhecimento da marca"
                     texto={`
                         Aumente o reconhecimento da sua marca com cada clique. As hiperligações genéricas não significam
-                        nada. Os links de marca ajudam a incluir confiança no seu conteúdo.
-                    `}
+                        nada. Os links de marca ajudam a incluir confiança no seu conteúdo.`}
                     img={reconhecimento}
                     cardNumero={1}
                 />
@@ -44,8 +46,7 @@ const Main = () => {
                     titulo="Registos detalhados"
                     texto={`
                         Obtenha informações sobre quem está clicando nos seus links. Saber quando e onde as pessoas
-                        se envolvem com o seu conteúdo ajuda a tomar melhores decisões.
-                    `}
+                        se envolvem com o seu conteúdo ajuda a tomar melhores decisões.`}
                     img={registros}
                     cardNumero={2}
                 />
@@ -54,12 +55,10 @@ const Main = () => {
                     titulo="Totalmente personalizável"
                     texto={`
                         Melhore o conhecimento da marca e a capacidade de descoberta do conteúdo através de links personalizáveis.
-                        Aumente o envolvimento do público.
-                    `}
+                        Aumente o envolvimento do público.`}
                     img={customizavel}
                     cardNumero={3}
                 />
-
             </div>
 
             <div className={styles.div3}>

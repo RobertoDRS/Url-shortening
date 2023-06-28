@@ -13,7 +13,7 @@
     gap: 10%;
 }
 
-.divMobile{
+.divMobile {
     display: none;
 }
 
@@ -27,57 +27,53 @@
     color: hsl(0, 0%, 0%);
 }
 
-.marginLink{
+.marginLink {
     margin-right: 2rem;
 }
 
 /** Desktop **/
-@media (min-width: 2300px){
+
+@media (min-width: 2300px) {
     .menu {
         max-width: 2224px;
     }
 }
 
-@media (min-width: 2000px) and (max-width: 2300px){
+@media (min-width: 2000px) and (max-width: 2300px) {
     .menu {
         max-width: 1924px;
     }
 }
 
-@media (min-width: 1800px) and (max-width: 2000px){
+@media (min-width: 1800px) and (max-width: 2000px) {
     .menu {
         max-width: 1724px;
     }
 }
 
-@media (min-width: 1620px) and (max-width: 1800px){
+@media (min-width: 1620px) and (max-width: 1800px) {
     .menu {
         max-width: 1524px;
     }
 }
 
-@media (max-width: 1380px){
+@media (max-width: 1380px) {
     .menu {
         width: 100%;
         padding: 3% 2%;
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .div {
-        gap:7%;
+        gap:6%;
     }
-}
-
-@media (max-width: 750px){
-    .marginLink{
+    .marginLink {
         margin-right: 1rem;
     }
 }
 
-
-@media (max-width: 705px){
-
+@media (max-width: 705px) {
     .menu {
         width: 100%;
         padding: 4%
@@ -87,7 +83,7 @@
         display: none;
     }
 
-    .divMobile{
+    .divMobile {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -110,7 +106,6 @@
         color: hsl(0, 0%, 100%);
     }
 
-
     .menuAberto {
         background-color: hsl(257, 27%, 26%);
         width: 100%;
@@ -122,7 +117,7 @@
         padding: 3rem 2rem;
         border-radius: 0.8rem;
         position: absolute;
-        top: 6rem;
+        top: 5rem;
         z-index: 1;
     }
 

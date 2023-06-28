@@ -1,9 +1,11 @@
+import styles from '../styles/Menu.module.css'
+
 import Image from "next/image"
 import Button from "./Button"
-import styles from '../styles/Menu.module.css'
 
 import logo from '../../public/images/logo.svg'
 import menu from '../../public/images/menu.svg'
+
 import { useState } from "react"
 
 
@@ -19,10 +21,10 @@ const Menu = () => {
             <div className={styles.menu} >
                 <div className={styles.divMobile}>
                     <div className={styles.barraMenu}>
-                        <Image src={logo} alt="Logo da Shortly" width={120} height={30}/>
+                        <Image src={logo} alt="Logo da Shortly" width={100} height={25}/>
                         
                         <button className={styles.botao} onClick={alternarMenu}>
-                            <Image src={menu} alt="Menu" width={40} height={40} />
+                            <Image src={menu} alt="Menu" width={30} height={30} />
                         </button>
                     </div>
 

@@ -1,7 +1,9 @@
-import Button from "./Button"
 import styles from '../styles/Formulario.module.css'
-import { useState } from "react"
+
+import Button from "./Button"
 import Resultado from "./Resultado"
+
+import { useState } from "react"
 
 interface formularioProps{
     alternarResultadoApresentado: (v:boolean) => void
@@ -42,13 +44,12 @@ const Formulario = (props: formularioProps) => {
         <div className={styles.containerFormulario}>
             <form onSubmit={e => e.preventDefault()} className={styles.formulario}>
                 <div className={styles.divForm}>
-                    <input 
-                        type="text" 
+                    <input type="text" 
                         className={`${styles.input} ${(inputVazio || urlIncorreta) && styles.inputErro}`}
                         placeholder="Encurte um link aqui..."  
                         value={link} onChange={e => setLink(e.target.value)}/>
 
-                    <Button quandoClicado={quandoClicado} texto="Encurtar!"  quadrado/>
+                    <Button quandoClicado={quandoClicado} texto="Encurtar!"  quadrado largo/>
                 </div>
                 <div>
                     {inputVazio && <span className={styles.spanErro}>Por favor, adicione um link</span>}

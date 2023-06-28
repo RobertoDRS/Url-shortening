@@ -1,5 +1,6 @@
-import Menu from "../Menu"
 import styles from '../../styles/Header.module.css'
+
+import Menu from "../Menu"
 import Banner from "../Banner"
 
 const Header = () => {

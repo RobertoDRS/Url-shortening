@@ -1,5 +1,6 @@
-import Button from "./Button"
 import styles from '../styles/Banner.module.css'
+
+import Button from "./Button"
 
 const Banner = () => {
     return (
@@ -15,9 +16,7 @@ const Banner = () => {
                 <Button texto="Começar"/>
             </div>
 
-            <div className={styles.div2}>
-               
-            </div>
+            <div className={styles.div2}></div>
         </div>
     )
 }

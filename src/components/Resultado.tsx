@@ -1,5 +1,7 @@
-import Button from "./Button"
 import styles from '../styles/Resultado.module.css'
+
+import Button from "./Button"
+
 import { useEffect, useState } from "react"
 
 interface resultadoProps {
@@ -14,7 +16,7 @@ const Resultado = (props: resultadoProps) => {
     useEffect(() => setCopiado(false), [props.urlOriginal] )
 
     function copiar(){
-       try{
+       try {
         const url = props.urlEncurtada
         navigator.clipboard.writeText(url)
         setCopiado(true)
@@ -28,8 +30,7 @@ const Resultado = (props: resultadoProps) => {
             <span className={styles.urlOriginal}>{props.urlOriginal}</span>
             <div className={styles.divInterna}>
                 <span>{props.urlEncurtada}</span>
-                <Button 
-                    texto={copiado ? 'Copiado': 'Copiar'} 
+                <Button texto={copiado ? 'Copiado': 'Copiar'} 
                     quadrado pequeno largo
                     copiado={copiado}
                     copiar={copiar}/>
